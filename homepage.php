@@ -233,49 +233,20 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
-				<div class="card text-center">
-				  <img src="assets/produk/produk7.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h6 class="card-title">Kamera</h6>
-				    <p class="card-text">Rp. 1000,-</p>
-				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
-				<div class="card text-center">
-				  <img src="assets/produk/produk8.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h6 class="card-title">Celana</h6>
-				    <p class="card-text">Rp. 1000,-</p>
-				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
-				<div class="card text-center">
-				  <img src="assets/produk/produk9.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h6 class="card-title">Keyboard</h6>
-				    <p class="card-text">Rp. 1000,-</p>
-				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
-				  </div>
-				</div>
 			</div>
 		</div>
 	</div>	
 	<!-- Showcase Product End -->
 	<!-- Footer Start -->
 	<footer id="footer">
-		<div class="footer-center" id="pavo-footer-center">
+		<div class="footer-center pt-5 mb-5" id="pavo-footer-center">
 			<div class="container">
 				<div class="inner">
 					<div class="row">
 						<div class="moveR col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="box pav-custom">
 								<div class="custom-content">
-									<div class="box-heading"><span>Korean Chart</span>
+									<div class="box-heading"><span><u>Korean Chart</u></span>
 									</div>
 									<p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
 									<p><img src="assets/vsBRHXI.png" alt="" width="196" height="237"></p>
@@ -285,7 +256,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
 							<div class="box pav-custom  ">
 								<div class="custom-content">
-								<div class="box-heading"><span class="title">Tentang Kami</span></div>
+								<div class="box-heading"><span class="title"><u>Tentang Kami</u></span></div>
 								<div class="content">
 									<p><strong>WhatsApp</strong>&nbsp;+6281320342023<br><a href="https://api.whatsapp.com/send?phone=6281320342023" target="_blank" rel="noopener"><span face="verdana, geneva, sans-serif" style="font-family: verdana, geneva, sans-serif;"></span></a></p>
 									<p><span style="font-size: 10pt;"><strong>Jam Kerja</strong></span><br><span style="font-size: 10pt;">Senin - Jum'at 07.30 - 11.30, 12.30 - 14.30, 15.30 - 17.30 WIB</span></p><p><span style="font-size: 8pt;"><em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em></span></p></div>
@@ -295,27 +266,24 @@
 						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
 							<div class="box pav-custom  ">
 								<div class="custom-content">
-									<div class="box-heading"><span class="title">Pembayaran</span></div>
-									<sl>
+									<div class="box-heading"><span class="title"><u>Pembayaran</u></span></div>
 									<div class="content">
 									<div style="line-height: 2;"><img loading="lazy" src="assets/bri.png" width="110" height="38" class="img-payment" alt="BRI"></div>
-									</ul>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/dana.png" width="110" height="38" class="img-payment" alt="Dana"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-1">
 							<div class="box footerlink">
 								<div class="box-heading">
-									<span>Information</span>
-									<div class="content">
-									<ul class="list">
-										<a href="/content/Cara-Order"><span class="menu-title">Cara Order</span></a>
+									<span><u>Information</u></span>
+									<div class="content mt-1">
+										<a href="/content/Cara-Order"><span class="menu-title">Cara Order</a>
 										<br>
 										<a href="/konfirmasipembayaran"><span class="menu-title">Konfirmasi Pembayaran</span></a>
 										<br>
 										<a href="/contactus.php"><span class="menu-title">Kontak Kami</span></a>
-									</ul>
 									</div>
 								</div>
 							</div>
