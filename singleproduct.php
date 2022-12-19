@@ -204,8 +204,23 @@
 								<div class="custom-content">
 								<div class="box-heading"><span class="title"><u>Tentang Kami</u></span></div>
 								<div class="content">
-									<p><strong>WhatsApp</strong>&nbsp;+6281320342023<br><a href="https://api.whatsapp.com/send?phone=6281320342023" target="_blank" rel="noopener"><span face="verdana, geneva, sans-serif" style="font-family: verdana, geneva, sans-serif;"></span></a></p>
-									<p><span style="font-size: 10pt;"><strong>Jam Kerja</strong></span><br><span style="font-size: 10pt;">Senin - Jum'at 07.30 - 11.30, 12.30 - 14.30, 15.30 - 17.30 WIB</span></p><p><span style="font-size: 8pt;"><em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em></span></p></div>
+									<p>
+										<strong>WhatsApp</strong>
+										<br>
+										<button type="button" class="btn btn-info"><a href="https://api.whatsapp.com/send?phone=6281320342023" target="_blank" rel="noopener" class="text-decoration-none text-white" style="font-size: 13px"><i class="fa-brands fa-whatsapp"></i> HUBUNGI KAMI</a></button>
+									</p>
+									<p>
+										<span style="font-size: 10pt;">
+											<strong>Jam Kerja</strong>
+										</span>
+										<br>
+										<span style="font-size: 10pt;">Senin - Jum'at 07.30 - 11.30, 12.30 - 14.30, 15.30 - 17.30 WIB</span>
+									</p>
+									<p>
+										<span style="font-size: 8pt;">
+											<em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em>
+										</span>
+									</p></div>
 								</div>
 							</div>
 						</div>
