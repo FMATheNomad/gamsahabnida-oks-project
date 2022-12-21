@@ -54,11 +54,11 @@
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 7"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
 		  </div>
 		  <div class="carousel-inner">
-		    <div class="carousel-itema active">
-		    	<img src="assets/G!.jpeg" class="d-block img-fluid" alt="Gamsahabnida!">
+		    <div class="carousel-item active">
+		    	<img src="assets/photo1671596642.jpeg" class="d-block img-fluid" alt="Gamsahabnida!">
 		    </div>
 		    <div class="carousel-item">
 		      <img src="assets/GI-DLE.jpg" class="d-block img-fluid" alt="GI-DLE">
