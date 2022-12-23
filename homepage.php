@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Gamsahabnida! Online Kpop Store</title>
-	<link rel="stylesheet" href="style-homepage.css">
+	<link rel="stylesheet" href="css/style-homepage.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 </head>
@@ -238,8 +238,9 @@
 				</div>
 			</div>
 			</div>
+			<div class="container">
 			<nav aria-label="Page navigation example" class="mt-3">
-			  <ul class="pagination">
+			  <ul class="pagination justify-content-center">
 			    <li class="page-item">
 			      <a class="page-link" href="#" aria-label="Previous">
 			        <span aria-hidden="true">&laquo;</span>
@@ -255,6 +256,7 @@
 			    </li>
 			  </ul>
 			</nav>
+		</div>
 		</div>
 	</div>
 	<!-- Showcase Product End -->

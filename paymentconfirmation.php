@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Gamsahabnida! Online Kpop Store</title>
-	<link rel="stylesheet" href="style-paymentconfirmation.css">
+	<link rel="stylesheet" href="css/style-paymentconfirmation.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 </head>
