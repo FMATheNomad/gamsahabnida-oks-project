@@ -12,7 +12,7 @@
 	<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
 	  <div class="container">
 	     <a class="navbar-brand" href="#">
-		    <img src="assets/logo.png" alt="Logo" width="50" height="50" class="me-2"> <strong>G!</strong> Kpop Store
+		    <img src="assets/logo/logo.png" alt="Logo" width="50" height="50" class="me-2"> <strong>G!</strong> Kpop Store
 		 </a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
 									<div class="box-heading"><span><u>Korean Chart</u></span>
 									</div>
 									<p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
-									<p><img src="assets/vsBRHXI.png" alt="" width="196" height="237"></p>
+									<p><img src="assets/chart/vsBRHXI.png" alt="" width="196" height="237"></p>
 								</div>
 							</div>
 						</div>
@@ -100,17 +100,19 @@
 								<div class="custom-content">
 									<div class="box-heading"><span class="title"><u>Pembayaran</u></span></div>
 									<div class="content">
-									<div style="line-height: 2;"><img loading="lazy" src="assets/bri.png" width="110" height="38" class="img-payment" alt="BRI"></div>
-									<div style="line-height: 2;"><img loading="lazy" src="assets/dana.png" width="110" height="38" class="img-payment" alt="Dana"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/BRI.png" width="110" height="38" class="img-payment" alt="BRI"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/Jago.png" width="110" height="38" class="img-payment" alt="Jago"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/Aladin.png" width="110" height="38" class="img-payment" alt="Aladin"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/blu.png" width="110" height="38" class="img-payment" alt="blu"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-1">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="box footerlink">
 								<div class="box-heading">
 									<span><u>Information</u></span>
-									<div class="content mt-1">
+									<div class="content">
 										<a href="/content/Cara-Order"><span class="menu-title">Cara Order</a>
 										<br>
 										<a href="/konfirmasipembayaran"><span class="menu-title">Konfirmasi Pembayaran</span></a>

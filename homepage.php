@@ -13,7 +13,7 @@
 	<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
 	  <div class="container">
 	     <a class="navbar-brand" href="#">
-		    <img src="assets/logo.png" alt="Logo" width="50" height="50" class="me-2"> <strong>G!</strong> Kpop Store
+		    <img src="assets/logo/logo.png" alt="Logo" width="50" height="50" class="me-2"> <strong>G!</strong> Kpop Store
 		 </a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
@@ -58,25 +58,25 @@
 		  </div>
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		    	<img src="assets/photo1671596642.jpeg" class="d-block img-fluid" alt="Gamsahabnida!">
+		    	<img src="assets/carousel/photo1671596642.jpeg" class="d-block img-fluid" alt="Gamsahabnida!">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="assets/GI-DLE.jpg" class="d-block img-fluid" alt="GI-DLE">
+		      <img src="assets/carousel/GI-DLE.jpg" class="d-block img-fluid" alt="GI-DLE">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="assets/ITZY.jpg" class="d-block img-fluid" alt="Itzy">
+		      <img src="assets/carousel/ITZY.jpg" class="d-block img-fluid" alt="Itzy">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="assets/Red Velvet.jpg" class="d-block img-fluid" alt="Red Velvet">
+		      <img src="assets/carousel/Red Velvet.jpg" class="d-block img-fluid" alt="Red Velvet">
 		    </div>
 		    <div class="carousel-item">
-		    	<img src="assets/TXT.jpg" class="d-block img-fluid" alt="Tomorrow X Together">
+		    	<img src="assets/carousel/TXT.jpg" class="d-block img-fluid" alt="Tomorrow X Together">
 		    </div>
 		    <div class="carousel-item">
-		    	<img src="assets/Stray Kids.jpg" class="d-block img-fluid" alt="Stray Kids">
+		    	<img src="assets/carousel/Stray Kids.jpg" class="d-block img-fluid" alt="Stray Kids">
 		    </div>
 		    <div class="carousel-item">
-		    	<img src="assets/OneUs.jpg" class="d-block img-fluid" alt="OneUs">
+		    	<img src="assets/carousel/OneUs.jpg" class="d-block img-fluid" alt="OneUs">
 		    </div>
 		  </div>
 		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -179,60 +179,60 @@
 		<div class="row">
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk1.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk1.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Headset</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">MOON BIN & SAN HA (ASTRO) - 3RD MINI ALBUM [INCENSE] [PO]</h6>
+				    <p class="card-text">Rp 220.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk2.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk2.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Baju</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (POCA ALBUM) [PO]</h6>
+				    <p class="card-text">Rp 230.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk3.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk3.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Sepatu</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (WITNESS VER.) (LIMITED EDITION) [PO]</h6>
+				    <p class="card-text">Rp 320.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk4.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk4.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Jam Tangan</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">LOONA - THE ORIGIN ALBUM [0] [PO]</h6>
+				    <p class="card-text">Rp 355.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk5.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk5.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Hand Sanitizer</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">TOMORROW X TOGETHER (TXT) - ALBUM [CHAPTER OF THE NAME : TEMPTATION] [PO]</h6>
+				    <p class="card-text">Rp. 315.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
 				<div class="card text-center">
-				  <img src="assets/produk/produk6.jpg" class="card-img-top" alt="...">
+				  <img src="assets/produk/produk6.jpeg" class="card-img-top" alt="...">
 				  <div class="card-body">
-				    <h6 class="card-title">Tas</h6>
-				    <p class="card-text">Rp. 1000,-</p>
+				    <h6 class="card-title">MONSTA X - 12TH MINI ALBUM [REASON] [PO]</h6>
+				    <p class="card-text">Rp. 320.000,-</p>
 				    <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
 				  </div>
 				</div>
@@ -272,7 +272,7 @@
 									<div class="box-heading"><span><u>Korean Chart</u></span>
 									</div>
 									<p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
-									<p><img src="assets/vsBRHXI.png" alt="" width="196" height="237"></p>
+									<p><img src="assets/chart/vsBRHXI.png" alt="" width="196" height="237"></p>
 								</div>
 							</div>
 						</div>
@@ -308,17 +308,19 @@
 								<div class="custom-content">
 									<div class="box-heading"><span class="title"><u>Pembayaran</u></span></div>
 									<div class="content">
-									<div style="line-height: 2;"><img loading="lazy" src="assets/bri.png" width="110" height="38" class="img-payment" alt="BRI"></div>
-									<div style="line-height: 2;"><img loading="lazy" src="assets/dana.png" width="110" height="38" class="img-payment" alt="Dana"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/BRI.png" width="110" height="38" class="img-payment" alt="BRI"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/Jago.png" width="110" height="38" class="img-payment" alt="Jago"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/Aladin.png" width="110" height="38" class="img-payment" alt="Aladin"></div>
+									<div style="line-height: 2;"><img loading="lazy" src="assets/payment/blu.png" width="110" height="38" class="img-payment" alt="blu"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mt-1">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 							<div class="box footerlink">
 								<div class="box-heading">
 									<span><u>Information</u></span>
-									<div class="content mt-1">
+									<div class="content">
 										<a href="/content/Cara-Order"><span class="menu-title">Cara Order</a>
 										<br>
 										<a href="/konfirmasipembayaran"><span class="menu-title">Konfirmasi Pembayaran</span></a>
