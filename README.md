@@ -1,1 +1,1 @@
-Gamsahabnida! Online Kpop Store is an online kpop store where kpop fans from various parts of the world (especially Indonesia) can buy exclusive and real-time kpop goods.
+Gamsahabnida! Online Merch Store is a trading company that focuses on selling merchandise from creative industry enthusiasts from various countries. Here, you can purchase merchandise such as music albums and other items such as, for example, the latest album from Blackpink, NIKI, and the anime Blu-ray Attack on Titan, all in one place!
