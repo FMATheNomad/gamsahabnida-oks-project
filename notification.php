@@ -40,124 +40,43 @@
       </div>
     </nav>
     <!-- Navbar End -->
-    <!-- Breadcrumb Start -->
-    <div class="container">
-      <nav aria-label="breadcrumb" class="mt-3">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page"><a href="#">Keranjang</a></li>
-        </ol>
-      </nav>
-    </div>  
-    <!-- Breadcrumb End -->
-    <!-- Cart Start -->
-    <div class="container">
-      <div class="row row-product">
-        <div class="col">
-          <table class="table table-responsive">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Hapus</th>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Gambar</th>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Produk</th>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Harga</th>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Jumlah</th>
-                <th scope="col" style="padding-top: 20px; padding-bottom: 20px;">Sub total</th>
-              </tr>
-            </thead>
-            <tbody class="align-middle">
-              <tr>
-                <th scope="row"><a href=""><i class="fa-solid fa-trash-can text-dark fs-4"></i></a></th>
-                <td><img src="assets/produk/produk1.jpg" alt="" style="width: 50px;"></td>
-                <td>Headset Rexus</td>
-                <td>Rp. 500.000,-</td>
-                <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-minus"></i></button>
-              <span class="mx-2">2</span>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i></button></td>
-                <td>Rp. 500.000,-</td>
-              </tr>
-              <tr>
-                <th scope="row"><a href=""><i class="fa-solid fa-trash-can text-dark fs-4"></i></a></th>
-                <td><img src="assets/produk/produk2.jpg" alt="" style="width: 50px;"></td>
-                <td>Baju Uniqlo</td>
-                <td>Rp. 100.000,-</td>
-                <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-minus"></i></button>
-              <span class="mx-2">5</span>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i></button></td>
-                <td>Rp. 100.000,-</td>
-              </tr>
-              <tr>
-                <th scope="row"><a href=""><i class="fa-solid fa-trash-can text-dark fs-4"></i></a></th>
-                <td><img src="assets/produk/produk3.jpg" alt="" style="width: 50px;"></td>
-                <td>Sepatu Adadis</td>
-                <td>Rp. 300.000,-</td>
-                <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-minus"></i></button>
-              <span class="mx-2">1</span>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i></button></td>
-                <td>Rp. 300.000,-</td>
-              </tr>
-              <tr>
-                <th scope="row"><a href=""><i class="fa-solid fa-trash-can text-dark fs-4"></i></a></th>
-                <td><img src="assets/produk/produk4.jpg" alt="" style="width: 50px;"></td>
-                <td>Jam Tangan Swiss Army</td>
-                <td>Rp. 1.000.000,-</td>
-                <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-minus"></i></button>
-              <span class="mx-2">1</span>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i></button></td>
-                <td>Rp. 1.000.000,-</td>
-              </tr>
-              <tr>
-                <th scope="row"><a href=""><i class="fa-solid fa-trash-can text-dark fs-4"></i></a></th>
-                <td><img src="assets/produk/produk5.jpg" alt="" style="width: 50px;"></td>
-                <td>Betadine Hand Sanitizer</td>
-                <td>Rp. 5.000,-</td>
-                <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-minus"></i></button>
-              <span class="mx-2">1</span>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i></button></td>
-                <td>Rp. 5.000,-</td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- Notification Start -->
+    <!-- Notifikasi berhasil -->
+    <div class="container mt-5">
+      <div class="alert alert-success alert-dismissible fade show" role="alert" data-fade="3000">
+        <h4 class="text-center"><u>Notifikasi</u></h4>
+        <hr>
+        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+          <strong>Berhasil!</strong> Pesanan Anda telah diterima.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <!-- Notifikasi gagal -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Gagal!</strong> Terjadi kesalahan saat mengirim pesanan. Silakan coba lagi.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Notifikasi peringatan -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Peringatan!</strong> Stok produk ini terbatas. Segera pesan sebelum kehabisan.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Notifikasi informasi -->
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Informasi!</strong> Pesanan Anda akan dikirim dalam waktu 1-3 hari kerja.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="container text-end"><button type="button" class="btn btn-info text-end">← Back to Homepage!</button></div>
       </div>
-      <div class="row row-product">
-        <div class="col">
-          <table class="table ms-auto mb-5 mt-3" id="table-checkout">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col" colspan="2" style="padding-top: 20px; padding-bottom: 20px;" class="text-center">Total Keranjang Belanja</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Total Harga</td>
-                <td>Rp. 1.950.000,-</td>
-              </tr>
-              <tr>
-                <td>Biaya Pengirman</td>
-                <td>Rp. 195.000,-</td>
-              </tr>
-              <tr>
-                <td>Biaya Layanan</td>
-                <td>Rp. 5.000,-</td>
-              </tr>
-              <tr>
-                <td>Sub Total</td>
-                <td>Rp. 2.150.000,-</td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="btn-checkout d-grid">
-                    <button class="btn btn-primary btn-sm mx-5">Pilih pengiriman dan metode pembayaran</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>  
-    </div>  
-    <!-- Cart End -->
+    </div>
+    <!-- Notification End -->
     <!-- Footer Start -->
     <footer id="footer" style="background-color: mistyrose;">
       <div class="container p-5 mt-5">
@@ -222,6 +141,11 @@
       </div>
     </footer>
     <!-- Footer End -->
+    <!-- My Javascript -->
+    <script>
+      $(".alert").alert();
+    </script>
+
     <!-- Fontawesome Kits -->
     <script src="https://kit.fontawesome.com/c32fe83d09.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Javascript -->

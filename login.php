@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container border mt-5 p-5 rounded border-5 mb-5">
       <form class="form-container">
         <h3 class="textForm">Masuk ke akun anda</h3>
         <div class="mb-3">

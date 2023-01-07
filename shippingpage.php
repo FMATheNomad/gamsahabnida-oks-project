@@ -24,34 +24,119 @@
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Keranjang</a>
+              <a class="nav-link" href="cart.php">Keranjang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifikasi</a>
+              <a class="nav-link" href="notification.php">Notifikasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bantuan</a>
+              <a class="nav-link" href="registration.php">Daftar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Masuk</a>
+              <a class="nav-link" href="login.php">Masuk</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
-<!-- Footer Start -->
-    <footer id="footer">
-      <div class="container mt-5">
+    <!-- Shippingpage Start -->
+    <div class="container p-5">
+    <div class="container">
+    <div class="panel panel-default col-xs-12 col-sm-6">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <span class="text-info"><u>Pengiriman</u></span>
+        </h4>
+      </div>
+      <div class="form-group">
+      <label class="control-label">Ekspedisi</label>
+      <br>
+      <div class="select-control">
+        <select class="form-control" onchange="clear_biaya();" id="pengiriman" name="pengiriman">
+          <option value="22" selected="">J&amp;T Express</option>
+          <option value="9">JNE REG</option>
+          <option value="19">JNE YES (Khusus Frozen KFOOD)</option>
+          <option value="16">Dropship Resi Otomatis J&amp;T Express (Cashless)</option>
+          <option value="15">Dropship Resi Otomatis JNE Reguler (Cashless)</option>
+        </select>
+      </div>
+      <input type="hidden" class="total" value="5">
+      <input type="hidden" class="ekps" value="0">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="search">Alamat Pengiriman</label>
+        <input type="text" id="searchkota" class="form-control autosuggest" name="tujuan" placeholder="" value="" autocomplete="off">
+        <input type="hidden" id="idkota" name="idkota" value="121772">
+      </div>
+    </div>
+    </div>
+    <!-- Shippingpage End -->
+    <!-- Payment Total Table Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 pull-right nopadding">
+          <table class="table table-bordered table-responsive table-total">
+          <tbody>
+            <tr>
+              <td class="text-right"><b>Total Rupiah</b></td>
+              <td class="text-right" width="42%"><b><span id="biayatotalrupiah">203.000</span></b></td>
+            </tr>
+          </tbody>
+          </table>
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Payment Total Table End -->
+    <!-- Payment Method Table Start -->
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default col-xs-12">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <span class="text-info"><u>Pembayaran</u></span>
+            </h4>
+          </div>
+        <table class="table pembayaran" width="100%">
+          <tbody>
+            <tr valign="top">
+              <td style="width:20px;">
+                <div class="radio_alt">
+                  <input type="radio" id="r1" name="pembayaran" checked="" value="1">
+                  <label for="r1"></label>
+                </div>
+              </td>
+              <td>
+                <label for="r1"><img src="assets/payment/bri.png" alt=""> Transfer Bank BRI</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+    <!-- Payment Method Table End -->
+    <!-- Checkout Button Start -->
+    <div class="container">
+      <div class="row">
+        <div class="buttons checkout">
+          <button class="btn btn-primary btn-back" onclick="gokembali()">← Back</button>
+          <button class="btn btn-primary btn-back" onclick="gobayar()">Checkout →</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Checkout Button End -->
+    <!-- Footer Start -->
+    <footer id="footer" style="background-color: mistyrose;">
+      <div class="container p-5 mt-5">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="custom-content">
               <div class="box-heading"><span><u><strong>Korean Chart</strong></u></span>
               </div>
-              <p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
+              <p><span style="font-size: 10pt;">Semua pembelian Album fisik Kpop di Gamsahabnida! akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
               <p><img src="assets/chart/vsBRHXI.png" alt="" width="196" height="237"></p>
             </div>
           </div>
@@ -74,7 +159,7 @@
                   </p>
                   <p>
                     <span style="font-size: 8pt;">
-                      <em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em>
+                      <em>Gamsahabnida! is the best online shopping option for those who want to try unique products from various parts of the world. Since 2022, we have been a trusted store that provides a wide range of cool items from Korea, Japan, Indonesia, and Hollywood.</em>
                     </span>
                   </p>
                 </div>

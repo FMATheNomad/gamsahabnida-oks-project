@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container border mt-5 p-5 rounded border-5 mb-5">
 	<form class="form-container" action="" method="post">
 		<h3 class="mt-4" style="font-weight: bold; font-size: 30px;">Daftar</h3>
 		<div class="row">

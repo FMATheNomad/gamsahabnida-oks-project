@@ -24,34 +24,40 @@
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Keranjang</a>
+              <a class="nav-link" href="cart.php">Keranjang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifikasi</a>
+              <a class="nav-link" href="notification.php">Notifikasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bantuan</a>
+              <a class="nav-link" href="registration.php">Daftar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Masuk</a>
+              <a class="nav-link" href="login.php">Masuk</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
-<!-- Footer Start -->
-    <footer id="footer">
-      <div class="container mt-5">
+    <!-- Payment Confirmation Start -->
+    <div class="container p-5">
+      <div class="mb-3">
+        <label for="formFile" class="form-label text-info">Silahkan upload bukti pembayaran anda</label>
+        <input class="form-control" type="file" id="formFile">
+        <button type="button" class="btn btn-primary mt-2">Konfirmasi</button>
+      </div>
+    </div>  
+    <!-- Payment Confirmation End -->
+    <!-- Footer Start -->
+    <footer id="footer" style="background-color: mistyrose;">
+      <div class="container p-5 mt-5">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="custom-content">
               <div class="box-heading"><span><u><strong>Korean Chart</strong></u></span>
               </div>
-              <p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
+              <p><span style="font-size: 10pt;">Semua pembelian Album fisik Kpop di Gamsahabnida! akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
               <p><img src="assets/chart/vsBRHXI.png" alt="" width="196" height="237"></p>
             </div>
           </div>
@@ -74,7 +80,7 @@
                   </p>
                   <p>
                     <span style="font-size: 8pt;">
-                      <em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em>
+                      <em>Gamsahabnida! is the best online shopping option for those who want to try unique products from various parts of the world. Since 2022, we have been a trusted store that provides a wide range of cool items from Korea, Japan, Indonesia, and Hollywood.</em>
                     </span>
                   </p>
                 </div>

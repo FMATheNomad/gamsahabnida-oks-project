@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gamsahabnida! Online Kpop Store</title>
+    <title>Gamsahabnida! Online Merchandise Store</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
@@ -24,19 +24,16 @@
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Keranjang</a>
+              <a class="nav-link" href="cart.php">Keranjang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifikasi</a>
+              <a class="nav-link" href="notification.php">Notifikasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bantuan</a>
+              <a class="nav-link" href="registration.php">Daftar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Masuk</a>
+              <a class="nav-link" href="login.php">Masuk</a>
             </li>
           </ul>
         </div>
@@ -45,47 +42,10 @@
     <!-- Navbar End -->
     <!-- Carousel Start -->
     <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <div class="row mt-5">
+        <div class="col">
+          <img src="assets/carousel/G!.png" alt="" class="d-block img-fluid">
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/carousel/photo1671596642.jpeg" class="d-block img-fluid" alt="Gamsahabnida!">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/GI-DLE.jpg" class="d-block img-fluid" alt="GI-DLE">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/ITZY.jpg" class="d-block img-fluid" alt="Itzy">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/Red Velvet.jpg" class="d-block img-fluid" alt="Red Velvet">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/TXT.jpg" class="d-block img-fluid" alt="Tomorrow X Together">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/Stray Kids.jpg" class="d-block img-fluid" alt="Stray Kids">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/carousel/OneUs.jpg" class="d-block img-fluid" alt="OneUs">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
     <!-- Carousel End -->
@@ -98,7 +58,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Korean Stuff
+              <img src="assets/icon/south-korea.png" style="width: 25px; height: 25px;">&nbsp;Korean Stuff
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -183,7 +143,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Japan Stuff
+              <img src="assets/icon/japan.png" style="width: 25px; height: 25px;">&nbsp;Japan Stuff
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -195,7 +155,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Indonesian Stuff
+              <img src="assets/icon/indonesia.png" style="width: 25px; height: 25px;">&nbsp;Indonesian Stuff
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -207,7 +167,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Hollywood Stuff
+              <img src="assets/icon/united-states-of-america.png" style="width: 25px; height: 25px;">&nbsp;Hollywood Stuff
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -228,12 +188,13 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Korean Stuff
+              <img src="assets/icon/south-korea.png" style="width: 25px; height: 25px;">&nbsp;Korean Stuff
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <div class="row">
+                <h5><strong><u>Ready Stock! New Arrival</u></strong></h5>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
                   <div class="card text-center">
                     <img src="assets/produk/produk1.jpeg" class="card-img-top" alt="...">
@@ -295,24 +256,8 @@
                   </div>
                 </div>
               </div>
-              <div class="container">
-                <nav aria-label="Page navigation example" class="mt-3">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+              <div class="container text-center mt-3">
+                <button type="button" class="btn btn-primary"><a href="" style="text-decoration: none; color: white;"><i class="fa-solid fa-cart-shopping"></i> Tampilkan selengkapnya</a></button>
               </div>  
             </div>
           </div>
@@ -320,7 +265,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSix">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Japan Stuff
+              <img src="assets/icon/japan.png" style="width: 25px; height: 25px;">&nbsp;Japan Stuff
             </button>
           </h2>
           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -332,7 +277,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSeven">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Indonesian Stuff
+              <img src="assets/icon/indonesia.png" style="width: 25px; height: 25px;">&nbsp;Indonesian Stuff
             </button>
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
@@ -344,7 +289,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingEight">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              Hollywood Stuff
+              <img src="assets/icon/united-states-of-america.png" style="width: 25px; height: 25px;">&nbsp;Hollywood Stuff
             </button>
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
@@ -357,14 +302,14 @@
     </div>
     <!-- Showcase Product End -->
     <!-- Footer Start -->
-    <footer id="footer">
-      <div class="container mt-5">
+    <footer id="footer" style="background-color: mistyrose;">
+      <div class="container p-5 mt-5">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="custom-content">
               <div class="box-heading"><span><u><strong>Korean Chart</strong></u></span>
               </div>
-              <p><span style="font-size: 10pt;">Semua pembelian Album fisik di Gamsahabnida! Online Kpop Store akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
+              <p><span style="font-size: 10pt;">Semua pembelian Album fisik Kpop di Gamsahabnida! akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></span></p>
               <p><img src="assets/chart/vsBRHXI.png" alt="" width="196" height="237"></p>
             </div>
           </div>
@@ -387,7 +332,7 @@
                   </p>
                   <p>
                     <span style="font-size: 8pt;">
-                      <em>Gamsahabnida! Online Kpop Store is a trusted Online Shopping Sites&nbsp;that provides imported and local Korean goodies since 2022</em>
+                      <em>Gamsahabnida! is the best online shopping option for those who want to try unique products from various parts of the world. Since 2022, we have been a trusted store that provides a wide range of cool items from Korea, Japan, Indonesia, and Hollywood.</em>
                     </span>
                   </p>
                 </div>
