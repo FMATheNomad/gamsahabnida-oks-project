@@ -255,9 +255,129 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">MOON BIN & SAN HA (ASTRO) - 3RD MINI ALBUM [INCENSE] [PO]</h6>
+                      <p class="card-text">Rp 220.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (POCA ALBUM) [PO]</h6>
+                      <p class="card-text">Rp 230.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (WITNESS VER.) (LIMITED EDITION) [PO]</h6>
+                      <p class="card-text">Rp 320.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">LOONA - THE ORIGIN ALBUM [0] [PO]</h6>
+                      <p class="card-text">Rp 355.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">TOMORROW X TOGETHER (TXT) - ALBUM [CHAPTER OF THE NAME : TEMPTATION] [PO]</h6>
+                      <p class="card-text">Rp 315.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">MONSTA X - 12TH MINI ALBUM [REASON] [PO]</h6>
+                      <p class="card-text">Rp 320.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">MOON BIN & SAN HA (ASTRO) - 3RD MINI ALBUM [INCENSE] [PO]</h6>
+                      <p class="card-text">Rp 220.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (POCA ALBUM) [PO]</h6>
+                      <p class="card-text">Rp 230.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">ATEEZ - 1ST SINGLE ALBUM [SPIN OFF : FROM THE WITNESS] (WITNESS VER.) (LIMITED EDITION) [PO]</h6>
+                      <p class="card-text">Rp 320.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">LOONA - THE ORIGIN ALBUM [0] [PO]</h6>
+                      <p class="card-text">Rp 355.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk5.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">TOMORROW X TOGETHER (TXT) - ALBUM [CHAPTER OF THE NAME : TEMPTATION] [PO]</h6>
+                      <p class="card-text">Rp 315.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-3">
+                  <div class="card text-center">
+                    <img src="assets/produk/produk6.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title text-truncate">MONSTA X - 12TH MINI ALBUM [REASON] [PO]</h6>
+                      <p class="card-text">Rp 320.000,-</p>
+                      <a href="#" class="btn btn-primary d-grid">Lihat detail</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="container text-center mt-3">
-                <button type="button" class="btn btn-primary"><a href="" style="text-decoration: none; color: white;"><i class="fa-solid fa-cart-shopping"></i> Tampilkan selengkapnya</a></button>
+                <button type="button" class="btn btn-primary"><a href="products.php" style="text-decoration: none; color: white;"><i class="fa-solid fa-cart-shopping"></i> Tampilkan selengkapnya</a></button>
               </div>  
             </div>
           </div>
