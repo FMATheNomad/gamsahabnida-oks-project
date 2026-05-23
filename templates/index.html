@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block title %}Gamsahabnida! Online Merch Store{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <img src="{{ url_for('static', filename='assets/carousel/G!.png') }}" alt="Gamsahabnida!" class="d-block img-fluid w-100 rounded">
+</div>
+
+<div class="container mt-4">
+  <h5 class="text-center"><u>Categories</u></h5>
+  <div class="accordion mt-3" id="categoryAccordion">
+    {% set countries = ['korea', 'japan', 'indonesia', 'usa'] %}
+    {% set country_labels = {'korea': 'Korean Stuff', 'japan': 'Japan Stuff', 'indonesia': 'Indonesian Stuff', 'usa': 'Hollywood Stuff'} %}
+    {% for country in countries %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button {{ ' collapsed' if not loop.first }}" type="button" data-bs-toggle="collapse" data-bs-target="#catCollapse{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}">
+          <img src="{{ url_for('static', filename=get_country_icon(country)) }}" width="25" height="25" class="me-2" alt="{{ country_labels[country] }}">
+          {{ country_labels[country] }}
+        </button>
+      </h2>
+      <div id="catCollapse{{ loop.index }}" class="accordion-collapse collapse {{ 'show' if loop.first }}" data-bs-parent="#categoryAccordion">
+        <div class="accordion-body">
+          {% set country_cats = categories | selectattr('country', 'equalto', country) | list %}
+          {% if country_cats %}
+          <div class="row text-center">
+            {% for cat in country_cats %}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+              <a href="{{ url_for('products', category=cat.slug) }}" class="text-decoration-none text-dark">
+                <div class="category-card p-2">
+                  <img src="{{ url_for('static', filename=cat.icon) }}" alt="{{ cat.name }}" width="50" class="mt-2">
+                  <p class="mt-2 small">{{ cat.name }}</p>
+                </div>
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <p>Belum tersedia.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h5 class="text-center"><u>Product</u></h5>
+  <div class="accordion mt-3" id="productAccordion">
+    {% set country_data = [
+      ('korea', 'Korean Stuff'),
+      ('japan', 'Japan Stuff'),
+      ('indonesia', 'Indonesian Stuff'),
+      ('usa', 'Hollywood Stuff')
+    ] %}
+    {% for country, label in country_data %}
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button {{ ' collapsed' if not loop.first }}" type="button" data-bs-toggle="collapse" data-bs-target="#prodCollapse{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}">
+          <img src="{{ url_for('static', filename=get_country_icon(country)) }}" width="25" height="25" class="me-2" alt="{{ label }}">
+          {{ label }}
+        </button>
+      </h2>
+      <div id="prodCollapse{{ loop.index }}" class="accordion-collapse collapse {{ 'show' if loop.first }}" data-bs-parent="#productAccordion">
+        <div class="accordion-body">
+          {% set country_products = featured_products if country == 'korea' else [] %}
+          {% if country_products %}
+          <h6 class="fw-bold"><u>Ready Stock! New Arrival</u></h6>
+          <div class="row">
+            {% for product in country_products %}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-3">
+              <div class="card h-100 text-center product-card">
+                <img src="{{ url_for('static', filename=product.image) }}" class="card-img-top" alt="{{ product.name }}" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title text-truncate small">{{ product.name }}</h6>
+                  <p class="card-text fw-bold text-primary mt-auto">{{ product.price_formatted() }}</p>
+                  <a href="{{ url_for('product_detail', slug=product.slug) }}" class="btn btn-primary btn-sm d-grid">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="text-center mt-3">
+            <a href="{{ url_for('products', country=country) }}" class="btn btn-primary">
+              <i class="fa-solid fa-cart-shopping"></i> Tampilkan selengkapnya
+            </a>
+          </div>
+          {% else %}
+          <p>Belum tersedia.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

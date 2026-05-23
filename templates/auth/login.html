@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Masuk - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+      <div class="card shadow">
+        <div class="card-body p-5">
+          <h4 class="text-center fw-bold mb-4"><i class="fa-solid fa-right-to-bracket"></i> Masuk</h4>
+          <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+              {{ form.email.label(class="form-label fw-bold") }}
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                {{ form.email(class="form-control" + (" is-invalid" if form.email.errors else ""), placeholder="Masukkan email...") }}
+              </div>
+              {% for error in form.email.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+            </div>
+            <div class="mb-3">
+              {{ form.password.label(class="form-label fw-bold") }}
+              <div class="input-group">
+                <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                {{ form.password(class="form-control" + (" is-invalid" if form.password.errors else ""), placeholder="Masukkan password...") }}
+              </div>
+              {% for error in form.password.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                {{ form.remember(class="form-check-input") }}
+                {{ form.remember.label(class="form-check-label") }}
+              </div>
+              <a href="#" class="text-decoration-none small">Lupa password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Masuk</button>
+            <div class="text-center mt-3">
+              <small>Belum punya akun? <a href="{{ url_for('register') }}" class="text-decoration-none">Daftar</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

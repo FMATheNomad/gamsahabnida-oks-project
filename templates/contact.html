@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}Kontak - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active">Kontak Kami</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <h4 class="fw-bold mb-4"><i class="fa-solid fa-envelope"></i> Kirim Pesan</h4>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+          {{ form.name.label(class="form-label fw-bold") }}
+          {{ form.name(class="form-control" + (" is-invalid" if form.name.errors else ""), placeholder="Nama Anda...") }}
+          {% for error in form.name.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.email.label(class="form-label fw-bold") }}
+          {{ form.email(class="form-control" + (" is-invalid" if form.email.errors else ""), placeholder="Email Anda...") }}
+          {% for error in form.email.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.message.label(class="form-label fw-bold") }}
+          {{ form.message(class="form-control" + (" is-invalid" if form.message.errors else ""), rows=5, placeholder="Tulis pesan Anda...") }}
+          {% for error in form.message.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</button>
+      </form>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <h4 class="fw-bold mb-4"><i class="fa-solid fa-address-card"></i> Informasi Toko</h4>
+      <div class="card">
+        <div class="card-body">
+          <div class="mb-3">
+            <i class="fa-brands fa-whatsapp fa-lg text-success me-2"></i>
+            <strong>WhatsApp:</strong><br>
+            <a href="https://api.whatsapp.com/send?phone=6281320342023" target="_blank" rel="noopener" class="text-decoration-none">+62 813-2034-2023</a>
+          </div>
+          <div class="mb-3">
+            <i class="fa-regular fa-clock fa-lg me-2"></i>
+            <strong>Jam Kerja:</strong><br>
+            Senin - Jumat: 07.30 - 17.30 WIB
+          </div>
+          <div class="mb-3">
+            <i class="fa-solid fa-location-dot fa-lg me-2"></i>
+            <strong>Alamat:</strong><br>
+            Gamsahabnida! Online Merch Store
+          </div>
+          <div>
+            <i class="fa-regular fa-note-sticky fa-lg me-2"></i>
+            <strong>Info:</strong><br>
+            <em>Gamsahabnida! is the best online shopping option for those who want to try unique products from various parts of the world. Since 2022.</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

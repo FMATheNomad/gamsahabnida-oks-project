@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}Konfirmasi Pembayaran - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ url_for('cart') }}" class="text-decoration-none">Keranjang</a></li>
+      <li class="breadcrumb-item"><a href="{{ url_for('shipping') }}" class="text-decoration-none">Pengiriman</a></li>
+      <li class="breadcrumb-item active">Pembayaran</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-7">
+      <h4 class="fw-bold mb-4"><i class="fa-solid fa-credit-card"></i> Konfirmasi Pembayaran</h4>
+
+      <div class="card mb-4">
+        <div class="card-header bg-info text-white fw-bold">Informasi Transfer</div>
+        <div class="card-body">
+          <p class="mb-1">Transfer ke rekening berikut:</p>
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <img src="{{ url_for('static', filename='assets/payment/BRI.png') }}" alt="BRI" height="30">
+            <span class="fw-bold">1234-5678-9101-1121 a.n. Gamsahabnida Store</span>
+          </div>
+          <hr>
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <img src="{{ url_for('static', filename='assets/payment/Jago.png') }}" alt="Jago" height="30">
+            <span class="fw-bold">9876-5432-1098-7654 a.n. Gamsahabnida Store</span>
+          </div>
+        </div>
+      </div>
+
+      <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+          {{ form.payment_method.label(class="form-label fw-bold") }}
+          {{ form.payment_method(class="form-select") }}
+        </div>
+        <div class="mb-3">
+          {{ form.payment_proof.label(class="form-label fw-bold") }}
+          {{ form.payment_proof(class="form-control") }}
+          <small class="text-muted">Upload bukti transfer (format: JPG, PNG, PDF)</small>
+        </div>
+        <button type="submit" class="btn btn-success w-100">
+          <i class="fa-solid fa-check"></i> Konfirmasi Pembayaran
+        </button>
+      </form>
+    </div>
+
+    <div class="col-md-5">
+      <div class="card mb-3">
+        <div class="card-header bg-dark text-white fw-bold">Ringkasan Pesanan</div>
+        <div class="card-body">
+          {% for item in cart.items %}
+          <div class="d-flex justify-content-between mb-1">
+            <small>{{ item.product.name[:30] }}... x{{ item.quantity }}</small>
+            <small>Rp {{ "{:,.0f}".format(item.subtotal) }}</small>
+          </div>
+          {% endfor %}
+          <hr>
+          <div class="d-flex justify-content-between"><span>Subtotal</span><span>Rp {{ "{:,.0f}".format(subtotal) }}</span></div>
+          <div class="d-flex justify-content-between"><span>Ongkos Kirim</span><span>{% if shipping_cost > 0 %}Rp {{ "{:,.0f}".format(shipping_cost) }}{% else %}<span class="text-success">GRATIS</span>{% endif %}</span></div>
+          <div class="d-flex justify-content-between"><span>Biaya Layanan</span><span>Rp {{ "{:,.0f}".format(service_fee) }}</span></div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold fs-5">
+            <span>Total</span>
+            <span class="text-primary">Rp {{ "{:,.0f}".format(total) }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-dark text-white fw-bold">Alamat Pengiriman</div>
+        <div class="card-body">
+          <p class="mb-1 fw-bold">{{ shipping.name }}</p>
+          <p class="mb-1">{{ shipping.phone }}</p>
+          <p class="mb-1">{{ shipping.address }}</p>
+          <p class="mb-1">{{ shipping.city }}</p>
+          <p class="mb-0">Kurir: {{ shipping.courier|upper }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

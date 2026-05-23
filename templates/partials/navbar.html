@@ -1,0 +1,59 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='assets/logo/logo.png') }}" alt="G! Logo" width="50" height="50" class="me-2">
+      <strong>G!</strong> Kpop Store
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <form class="d-flex ms-auto my-4 my-lg-0 position-relative" role="search" action="{{ url_for('products') }}" method="GET">
+        <input class="form-control me-2" type="search" name="q" placeholder="Cari produk..." aria-label="Search" id="search-input" autocomplete="off">
+        <button class="btn btn-outline-info" type="submit"><i class="fa-brands fa-searchengin"></i></button>
+        <div id="search-results" class="dropdown-menu w-100 d-none"></div>
+      </form>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="{{ url_for('cart') }}">
+            <i class="fa-solid fa-cart-shopping"></i> Keranjang
+            {% if cart_count > 0 %}
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px;">
+              {{ cart_count }}
+            </span>
+            {% endif %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="{{ url_for('notification') }}">
+            <i class="fa-solid fa-bell"></i> Notifikasi
+            {% if unread_notifications > 0 %}
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 10px;">
+              {{ unread_notifications }}
+            </span>
+            {% endif %}
+          </a>
+        </li>
+        {% if current_user.is_authenticated %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i> {{ current_user.name }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="{{ url_for('notification') }}">Notifikasi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="{{ url_for('logout') }}">Logout</a></li>
+          </ul>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('register') }}">Daftar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('login') }}">Masuk</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

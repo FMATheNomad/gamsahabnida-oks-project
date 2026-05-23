@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %}Produk - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active">Produk</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <div class="card-header bg-dark text-white fw-bold">Filter</div>
+        <div class="card-body">
+          <h6 class="fw-bold">Kategori</h6>
+          <ul class="list-unstyled">
+            <li><a href="{{ url_for('products') }}" class="text-decoration-none {% if not active_category %}fw-bold{% endif %}">Semua</a></li>
+            {% for cat in categories %}
+            <li>
+              <a href="{{ url_for('products', category=cat.slug) }}" class="text-decoration-none {% if active_category == cat.slug %}fw-bold{% endif %}">
+                {{ cat.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <hr>
+          <h6 class="fw-bold">Negara</h6>
+          <ul class="list-unstyled">
+            {% set countries = [('', 'Semua'), ('korea', 'Korea'), ('japan', 'Japan'), ('indonesia', 'Indonesia'), ('usa', 'USA')] %}
+            {% for val, label in countries %}
+            <li>
+              <a href="{{ url_for('products', country=val) }}" class="text-decoration-none {% if active_country == val %}fw-bold{% endif %}">{{ label }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      {% if search_query %}
+      <p class="text-muted">Hasil pencarian untuk: <strong>"{{ search_query }}"</strong></p>
+      {% endif %}
+
+      {% if products %}
+      <div class="row">
+        {% for product in products %}
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+          <div class="card h-100 text-center product-card">
+            <div class="position-relative">
+              <img src="{{ url_for('static', filename=product.image) }}" class="card-img-top" alt="{{ product.name }}" loading="lazy" style="height: 200px; object-fit: cover;">
+              {% if product.is_new %}
+              <span class="position-absolute top-0 start-0 badge bg-danger">NEW</span>
+              {% endif %}
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h6 class="card-title text-truncate small">{{ product.name }}</h6>
+              <p class="card-text fw-bold text-primary mt-auto">{{ product.price_formatted() }}</p>
+              <a href="{{ url_for('product_detail', slug=product.slug) }}" class="btn btn-primary btn-sm">Detail</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="text-center py-5">
+        <i class="fa-solid fa-box-open fa-3x text-muted mb-3"></i>
+        <p class="text-muted">Tidak ada produk ditemukan.</p>
+        <a href="{{ url_for('products') }}" class="btn btn-primary">Lihat semua produk</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

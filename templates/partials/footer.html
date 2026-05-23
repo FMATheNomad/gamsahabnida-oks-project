@@ -1,0 +1,40 @@
+<footer class="bg-mistyrose mt-5">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold"><u>Korean Chart</u></h6>
+        <p class="small">Semua pembelian Album fisik Kpop di Gamsahabnida! akan terhitung di <strong>HANTEO &amp; GAON Chart</strong></p>
+        <img src="{{ url_for('static', filename='assets/chart/vsBRHXI.png') }}" alt="Hanteo Gaon Chart" width="196" height="237" loading="lazy" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold"><u>Tentang Kami</u></h6>
+        <p><strong>WhatsApp</strong></p>
+        <a href="https://api.whatsapp.com/send?phone=6281320342023" target="_blank" rel="noopener" class="btn btn-info btn-sm text-white text-decoration-none">
+          <i class="fa-brands fa-whatsapp"></i> HUBUNGI KAMI
+        </a>
+        <p class="mt-2 small"><strong>Jam Kerja</strong><br>Senin - Jum'at 07.30 - 11.30, 12.30 - 14.30, 15.30 - 17.30 WIB</p>
+        <p class="small fst-italic">Gamsahabnida! is the best online shopping option for those who want to try unique products from various parts of the world. Since 2022, we have been a trusted store that provides a wide range of cool items from Korea, Japan, Indonesia, and Hollywood.</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold"><u>Pembayaran</u></h6>
+        <div class="d-flex flex-column gap-2">
+          <img loading="lazy" src="{{ url_for('static', filename='assets/payment/BRI.png') }}" width="110" height="38" alt="BRI">
+          <img loading="lazy" src="{{ url_for('static', filename='assets/payment/Jago.png') }}" width="110" height="38" alt="Jago">
+          <img loading="lazy" src="{{ url_for('static', filename='assets/payment/Aladin.png') }}" width="110" height="38" alt="Aladin">
+          <img loading="lazy" src="{{ url_for('static', filename='assets/payment/blu.png') }}" width="110" height="38" alt="blu">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-bold"><u>Informasi</u></h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none">Cara Order</a></li>
+          <li><a href="{{ url_for('payment_confirmation') }}" class="text-decoration-none">Konfirmasi Pembayaran</a></li>
+          <li><a href="{{ url_for('contact') }}" class="text-decoration-none">Kontak Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark text-white text-center py-3 small">
+    &copy; {{ now.year }} Gamsahabnida! Online Merch Store. All rights reserved.
+  </div>
+</footer>

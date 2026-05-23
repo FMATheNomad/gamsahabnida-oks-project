@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}Pengiriman - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ url_for('cart') }}" class="text-decoration-none">Keranjang</a></li>
+      <li class="breadcrumb-item active">Pengiriman</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-7">
+      <h4 class="fw-bold mb-4"><i class="fa-solid fa-truck"></i> Data Pengiriman</h4>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+          {{ form.name.label(class="form-label fw-bold") }}
+          {{ form.name(class="form-control" + (" is-invalid" if form.name.errors else ""), placeholder="Nama penerima...") }}
+          {% for error in form.name.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.phone.label(class="form-label fw-bold") }}
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+            {{ form.phone(class="form-control" + (" is-invalid" if form.phone.errors else ""), placeholder="No. HP...") }}
+          </div>
+          {% for error in form.phone.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.address.label(class="form-label fw-bold") }}
+          {{ form.address(class="form-control" + (" is-invalid" if form.address.errors else ""), rows=3, placeholder="Alamat lengkap...") }}
+          {% for error in form.address.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.city.label(class="form-label fw-bold") }}
+          {{ form.city(class="form-control" + (" is-invalid" if form.city.errors else ""), placeholder="Kota...") }}
+          {% for error in form.city.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.courier.label(class="form-label fw-bold") }}
+          {{ form.courier(class="form-select" + (" is-invalid" if form.courier.errors else "")) }}
+          {% for error in form.courier.errors %}<div class="invalid-feedback">{{ error }}</div>{% endfor %}
+        </div>
+        <div class="mb-3">
+          {{ form.note.label(class="form-label fw-bold") }}
+          {{ form.note(class="form-control", rows=2, placeholder="Catatan untuk kurir (opsional)...") }}
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Lanjut ke Pembayaran</button>
+      </form>
+    </div>
+
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header bg-dark text-white fw-bold">Ringkasan Belanja</div>
+        <div class="card-body">
+          {% for item in cart.items %}
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+              <small class="fw-bold">{{ item.product.name[:40] }}{% if item.product.name|length > 40 %}...{% endif %}</small>
+              <br><small class="text-muted">{{ item.quantity }}x {{ item.product.price_formatted() }}</small>
+            </div>
+            <small class="fw-bold">Rp {{ "{:,.0f}".format(item.subtotal) }}</small>
+          </div>
+          {% if not loop.last %}<hr class="my-1">{% endif %}
+          {% endfor %}
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span class="fw-bold">Total</span>
+            <span class="fw-bold text-primary">Rp {{ "{:,.0f}".format(cart.total_price) }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

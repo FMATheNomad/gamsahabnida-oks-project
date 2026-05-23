@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Menunggu Pembayaran - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active">Status Pesanan</li>
+    </ol>
+  </nav>
+
+  <div class="text-center py-5">
+    <i class="fa-solid fa-clock fa-4x text-warning mb-3"></i>
+    <h4 class="fw-bold">Pesanan Berhasil Dibuat!</h4>
+    <p class="text-muted">Pesanan Anda sedang menunggu konfirmasi pembayaran.</p>
+
+    <div class="card mx-auto mt-4" style="max-width: 500px;">
+      <div class="card-body">
+        <table class="table table-sm table-borderless mb-0 text-start">
+          <tr>
+            <td class="fw-bold">No. Pesanan</td>
+            <td class="text-end">{{ order.order_number }}</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Status</td>
+            <td class="text-end"><span class="badge bg-warning text-dark">{{ order.status|upper }}</span></td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Total Pembayaran</td>
+            <td class="text-end text-primary fw-bold">{{ order.total_formatted() }}</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Tanggal</td>
+            <td class="text-end">{{ order.created_at.strftime('%d %B %Y %H:%M') }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <p>Silakan transfer sejumlah <strong class="text-primary">{{ order.total_formatted() }}</strong> ke rekening:</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <img src="{{ url_for('static', filename='assets/payment/BRI.png') }}" alt="BRI" height="35">
+        <img src="{{ url_for('static', filename='assets/payment/Jago.png') }}" alt="Jago" height="35">
+        <img src="{{ url_for('static', filename='assets/payment/Aladin.png') }}" alt="Aladin" height="35">
+        <img src="{{ url_for('static', filename='assets/payment/blu.png') }}" alt="blu" height="35">
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <p>Upload bukti transfer di halaman konfirmasi pembayaran.</p>
+      <a href="{{ url_for('payment_confirmation') }}" class="btn btn-primary"><i class="fa-solid fa-upload"></i> Konfirmasi Pembayaran</a>
+      <a href="{{ url_for('products') }}" class="btn btn-outline-primary ms-2"><i class="fa-solid fa-shop"></i> Belanja Lagi</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

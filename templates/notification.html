@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Notifikasi - Gamsahabnida!{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active">Notifikasi</li>
+    </ol>
+  </nav>
+
+  <h4 class="fw-bold mb-4"><i class="fa-solid fa-bell"></i> Notifikasi</h4>
+
+  {% if notifications %}
+  <div class="list-group">
+    {% for notif in notifications %}
+    <div class="list-group-item list-group-item-action {{ '' if notif.is_read else 'list-group-item-info' }}">
+      <div class="d-flex w-100 justify-content-between align-items-start">
+        <div>
+          <h6 class="mb-1">{{ notif.title }}</h6>
+          <p class="mb-1">{{ notif.message }}</p>
+        </div>
+        <div class="text-end">
+          <small class="text-muted">{{ notif.created_at.strftime('%d/%m/%Y %H:%M') }}</small>
+          {% if not notif.is_read %}
+          <br>
+          <a href="{{ url_for('notification_read', id=notif.id) }}" class="btn btn-sm btn-outline-primary mt-1">Tandai dibaca</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="text-center py-5">
+    <i class="fa-solid fa-bell-slash fa-4x text-muted mb-3"></i>
+    <p class="text-muted">Tidak ada notifikasi.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
